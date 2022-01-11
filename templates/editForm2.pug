@@ -1,0 +1,76 @@
+html
+  head
+    title WISATA ALAM DI NTT
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js")
+    link(rel="stylesheet" href="./bg/bg.css")
+  body
+  div(class="container p-4 my-4 bg-white text-dark")
+    div(id="demo" class="carousel slide" data-bs-ride="carousel")
+      div(class="carousel-indicators")
+        button(type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active")
+        button(type="button" data-bs-target="#demo" data-bs-slide-to="1")
+        button(type="button" data-bs-target="#demo" data-bs-slide-to="2")
+        button(type="button" data-bs-target="#demo" data-bs-slide-to="3")             
+      div(class="carousel-inner")
+        div(class="carousel-item active")
+          img(src="./carousel/maubesi.jpg" width="100%" height="400")
+        div(class="carousel-item")
+          img(src="./carousel/wemasa.jpg" width="100%" height="400")
+        div(class="carousel-item")
+          img(src="./carousel/abudenok.jpg" width="100%" height="400")
+        div(class="carousel-item")
+          img(src="./carousel/motadikin.jpg" width="100%" height="400")
+      button(class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev")
+        span(class="carousel-control-prev-icon")
+      button(class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next")
+        span(class="carousel-control-next-icon")
+    nav(class="navbar navbar-expand-sm navbar-dark")
+      div(class="container-fluid")
+          a(class="navbar-brand" href="/")
+            img(src="./gambar/logo.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill")
+          button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar")
+            span(class="navbar-toggler-icon")
+          div(class="collapse navbar-collapse" id="collapsibleNavbar")
+            ul(class="navbar-nav")
+              li(class="nav-item")
+                a(class="nav-link" class="text-body" href="/list2") Kembali
+              li(class="nav-item")
+                a(class="nav-link" class="text-body" href="/main") Beranda
+              li(class="nav-item")
+                a(class="nav-link" class="text-body" href="/") Logout
+    div(class="row")
+      div(class="col-sm-5") 
+        h2 Petunjuk :
+        center 
+          img(src="./gambar/edit.jpeg" width="100%" height="260")
+        hr
+        div(class="toast show")
+        div(class="toast-header")
+          strong(class="me-auto") Change the data according to the conditions
+          button(type="button" class="btn-close" data-bs-dismiss="toast")
+        div(class="toast-body")
+          p 1. Make sure your id is correct
+          p 2. Please edit the date accordingly
+          p 3. Use active email
+          p 4. Give your best comment
+      div(class="col-sm-7 mx-auto")
+        div(class="alert alert-info")
+          h2 Ubah Data
+        form(action="/edit2" method="post")
+          div(class="input-group mb-2")
+            span(class="input-group-text") ID Buku  Tamu
+            input(type="number" name="id_buku_tamu" class="form-control" value=buku_tamu['id_buku_tamu'] readonly="true" required)
+          div(class="input-group mb-2")
+            span(class="input-group-text") Tanggal
+            input(type="date" name="tanggal" class="form-control" value=buku_tamu['tanggal'] required)
+          div(class="input-group mb-2")
+            span(class="input-group-text") EMAIL
+            input(type="email" name="email" class="form-control" value=buku_tamu['email'] required)
+          div(class="input-group mb-2")
+            span(class="input-group-text") Komentar
+            input(type="text" name="komentar" class="form-control" value=buku_tamu['komentar'] required)
+          div(style="margin-top: 10px;")
+            input(type="submit" value="Simpan" class="btn btn-success")
+            input(type="button", value="Batal" onClick="javascript:history.go(-1);" class="btn btn-info")

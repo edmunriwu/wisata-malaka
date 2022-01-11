@@ -1,0 +1,8 @@
+body{
+
+    background: hsl(180, 84%, 37%) ;
+}
+
+nav{
+    background-image: linear-gradient(-90deg, #37d485, #319fa3);
+}

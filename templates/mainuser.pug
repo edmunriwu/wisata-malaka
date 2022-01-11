@@ -1,0 +1,279 @@
+html 
+    head 
+        title WELCOME TO WISATA ALAM KABUPATEN MALAKA
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet")
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js")
+        link(rel="stylesheet" href="./bg/bg.css")
+    body
+    div(class="container p-4 my-4 bg-white text-dark")
+        div(id="demo" class="carousel slide" data-bs-ride="carousel")
+            div(class="carousel-indicators")
+                button(type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active")
+                button(type="button" data-bs-target="#demo" data-bs-slide-to="1")
+                button(type="button" data-bs-target="#demo" data-bs-slide-to="2")
+                button(type="button" data-bs-target="#demo" data-bs-slide-to="3")             
+            div(class="carousel-inner")
+                div(class="carousel-item active")
+                    img(src="./carousel/maubesi.jpg" width="100%" height="400")
+                div(class="carousel-item")
+                    img(src="./carousel/wemasa.jpg" width="100%" height="400")
+                div(class="carousel-item")
+                    img(src="./carousel/abudenok.jpg" width="100%" height="400")
+                div(class="carousel-item")
+                    img(src="./carousel/motadikin.jpg" width="100%" height="400")
+            button(class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev")
+                span(class="carousel-control-prev-icon")
+            button(class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next")
+                span(class="carousel-control-next-icon")
+        nav(class="navbar navbar-expand-sm navbar-dark")
+            div(class="container-fluid")
+                a(class="navbar-brand" href="/")
+                    img(src="./gambar/logo.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill")
+                button(class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar")
+                    span(class="navbar-toggler-icon")
+                div(class="collapse navbar-collapse" id="collapsibleNavbar")
+                    ul(class="navbar-nav")
+                        li(class="nav-item")
+                            strong
+                                a(class="nav-link" class="text-body" href="/list11") Admin
+                        li(class="nav-item")
+                            strong
+                                a(class="nav-link" class="text-body" href="/list12") Buku Tamu
+                        li(class="nav-item")
+                            strong
+                                a(class="nav-link" class="text-body" href="/list13") Objek Wisata
+                        li(class="nav-item")
+                            strong
+                                a(class="nav-link" class="text-body" href="/list14") Penginapan
+                        li(class="nav-item")
+                            strong
+                                a(class="nav-link" class="text-body" href="/list15") Restoran 
+                        li(class="nav-item")
+                            strong
+                                a(class="nav-link" class="text-body" href="/list16") Testimoni 
+                        button(type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#login") Login    
+        div(class="container mt-3")
+            div(class="modal" id="login")
+                div(class="modal-dialog")
+                    div(class="modal-content")
+                        div(class="modal-header")
+                            h4(class="modal-title")
+                            button(type="button" class="btn-close" data-bs-dismiss="modal")
+                        div(class="modal-body")
+                            center
+                                img(src="./gambar/login.jpeg" width="100%" height="260")
+                            div(class="alert alert-info")
+                                h2 FORM LOGIN
+                                if msg
+                                    p(style="color: #000000;") #{msg}
+                            form(action="/login" method="post")
+                                div(class="input-group mb-2")
+                                    span(class="input-group-text") User ID
+                                    input(type="text" name="user_id" class="form-control" required)
+                                br
+                                div(class="input-group mb-2")
+                                    span(class="input-group-text") PASSWORD
+                                    input(type="password" name="user_password" class="form-control" required)
+                                br
+                                div(style="margin-top: 10px;")
+                                    input(type="submit" value="Login" class="btn btn-success")
+                                
+        br
+        p
+        div(class="row")
+            div(class="col-sm-3")
+                img(src="./gambar/welcome.jpg" width="100%" height="200")
+                br
+                br
+                font(face="ALGERIAN")
+                    h3(class="text-center") WISATA ALAM KABUPATEN MALAKA
+                br
+                div(style="text-align:justify;")
+                    h5 Kabupaten Malaka adalah salah satu kabupaten di provinsi Nusa Tenggara Timur, Indonesia. Ibu kotanya berada di Betun. 
+                    h5 Malaka merupakan hasil pemekaran dari Kabupaten Belu yang disahkan dalam sidang paripurna DPR RI pada 14 Desember 2012 di gedung DPR RI tentang Rancangan UU Daerah Otonomi Baru.    
+
+                br
+                br
+                hr
+                br
+                br
+                div(class="toast show")
+                    div(class="toast-header" class="bg-dark text-white")
+                        h4(class="text-center") Letak Geografi  
+                    div(class="toast-body")
+                        br
+                        div(class="text-align:justify;")
+                            h5 Secara geografis, Kabupaten Malaka terletak pada 9°18'7.19" - 9°47'26.68" Lintang Selatan dan 124°38'32.17" - 125°5'21.38" Bujur Timur. 
+                            h5 Luas wilayah kabupaten ini adalah 1.160,63 km². Wilayahnya berbatasan langsung dengan Timor Leste. 
+                            h5 Kabupaten Malaka berjarak sekira 232 Km dari Kota Kupang ke arah timur.
+                br
+                br
+                hr
+                br
+                br
+                div(class="toast show")
+                    div(class="toast-header" class="bg-dark text-white")
+                        h4(class="text-center") wisata Alam  
+                    div(class="toast-body")
+                        br
+                        div(class="text-align:justify;")
+                            h4 Sedikitnya ada 8 pantai yang ditetapkan oleh pemerintah kabupaten Malaka sebagai destinasi wisata unggulan
+                br
+                br
+                hr
+                br
+                br
+                div(class="toast show")
+                    div(class="toast-header" class="bg-dark text-white")
+                        h4(class="text-center") Objek Wisata  
+                    div(class="toast-body")
+                        br
+                        each objek_wisata_ow in objek_wisata_ows
+                            br
+                            h5 #{objek_wisata_ow['id_ow']} #{objek_wisata_ow['nama_ow']}
+            div(class="col-sm-6")
+                div(class="table-responsive") 
+                    table(class="table table-sm table-hover ")
+                    font(face="Times New Roman")
+                    div(style="text-align:justify;")
+                        br
+                        h2 Tempat Wisata di Malaka
+                        hr
+                        br
+                        h5 Bagi sebagian orang, liburan adalah kebutuhan yang harus terpenuhi, sejenak melupakan kepenatan aktivitas harian akan agar pikiran fresh kembali. Entah per satu bulan sekali atau satu tahun sekali. 
+                        h5 Nah, di tahun ini apakah kamu sudah merencanakan agenda liburan? Atau masih mencari tempat yang cocok? Bagaimana bila berkunjung ke tempat wisata Nusa Tenggara Timur khususnya yang ada di daerah Malaka.
+                        br
+                        br
+                        br
+                        h5 Sebagai salah satu kabupaten di NTT, Malaka cukup populer apalagi soal destinasi wisatanya. Ada cukup banyak tersembunyi di daerah ini yang belum banyak diketahui. 
+                        h5 Berikut adalah beberapa tempat wisata di Malaka yang bisa kamu kunjungi.
+                        br
+                        br
+                        each objek_wisata_ow in objek_wisata_ows
+                            div(class="font-weight: bold;")
+                                h2 #{objek_wisata_ow['nama_ow']}
+                            p
+                            a(href="/upload/" + objek_wisata_ow.gambar target="_blank")
+                                img(src="/upload/" + objek_wisata_ow.gambar width="100%")
+                            br
+                            p
+                            div(style="text-align:justify;") 
+
+                                h4 #{objek_wisata_ow['deskripsi_singkat']}
+                            br
+                            h5 Lokasi : #{objek_wisata_ow['lokasi']}
+                            br
+                            h5 Jam Operasi : #{objek_wisata_ow['jam_operasi']}
+                            br
+                            h5 Tarif Masuk : Rp.#{objek_wisata_ow['tarif_masuk']} Ribu
+                            hr
+                            br
+            div(class="col-sm-3")
+                br
+                br
+                div(class="toast-header" class="text-dark")
+                    h3(class="text-center") Kabupaten Malaka 
+                div(class="toast-body")
+                    iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9026.504623161729!2d124.90551604878006!3d-9.56355363965146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2cff1332377d40b9%3A0xd794bc936a57aafa!2sMalaka%2C%20Nusa%20Tenggara%20Tim.!5e1!3m2!1sid!2sid!4v1638556790497!5m2!1sid!2sid" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy")
+                    hr
+                    h5 Luas: 1.161 km² 
+                    p
+                    h5 Provinsi: Nusa Tenggara Timur
+                    p
+                    h5 Ibu kota: Betun
+                    p
+                    h5 Jumlah kecamatan: 12
+                    p
+                    h5 Jumlah kelurahan: 127 
+                    p
+                    h5 Kode Kemendagri: 53.21
+                br
+                br
+                hr
+                br
+                br
+                div(class="toast show")
+                    div(class="toast-header" class="bg-dark text-white")
+                        h4(class="text-center") Buku Tamu  
+                    div(class="toast-body" class="alert alert-secondary")
+                        br
+                        h5 Selamat Datang Di Website Objek Wisata Alam Kabupaten Malaka 
+                        br
+                        center
+                            a(href="/list12" type="button" class="btn btn-primary btn-lg") Isi Buku Tamu
+                br
+                br
+                hr
+                br
+                br
+                div(class="toast show")
+                    div(class="toast-header" class="bg-dark text-white")
+                        h4(class="text-center") Destinasi Wisata 
+                    div(class="toast-body")
+                        br
+                        h5 Ayo Sempatkan Diri Anda Untuk Berliburan dan menikmati Keindahan Destinasi Wisata Alam Kabupaten Malaka
+                br
+                br
+                hr
+                br
+                br
+                div(class="toast show")
+                    div(class="toast-header" class="bg-dark text-white")
+                        center
+                            h4 TESTIMONI  
+                    div(class="toast-body" class="alert alert-secondary")
+                        br
+                        h5 Objek Wisata Alam Kabupaten Malaka menjadi salah satu Destinasi Keindahan
+                        h6 Berikan Tanggapan Tentang keindahan Wisata Alam di Kabupaten Malaka
+                        br
+                        center
+                            a(href="/list16" type="button" class="btn btn-primary btn-lg") Isi Testimoni
+               
+        br
+        br
+        div(class="alert alert-success")
+            marquee 
+                h5 Kabupaten Malaka adalah salah satu kabupaten di provinsi Nusa Tenggara Timur, Indonesia. Ibu kotanya berada di Betun. Malaka merupakan hasil pemekaran dari Kabupaten Belu yang disahkan dalam sidang paripurna DPR RI pada 14 Desember 2012 di gedung DPR RI tentang Rancangan UU Daerah Otonomi Baru.    
+        div(class="container p-3 my-3 bg-dark text-white")     
+            div(class="row")
+                div(class="col-sm-1") 
+                div(class="col-sm-5") 
+                    br
+                    h4(class="text-center") KABUPATEN MALAKA
+                    hr
+                    center
+                        img(src="./gambar/logo.jpg" width="80" height="80")
+                    br
+                    br
+                    h5 VISI :
+                    h6 Terciptanya Bantul sebagai Destinasi Pariwisata Utama Indonesia Yang Bernuansa Harmoni Alam Untuk Kesejahteraan Masyarakat
+                    br
+                    h5 MISI :
+                    h6 Mengembangkan pariwisata yang berbasis pada karakter lokal, alam, dan minat khusus yang berwawasan lingkungan, berkelanjutan dan berorientasi pada pemberdayaan masyarakat.
+                div(class="col-sm-5")
+                    br 
+                    h4(class="text-center") Kontak Kami 
+                    hr
+                    h6 Email :
+                    h6 ferdinandusfahik14@gmail.com
+                    h6 edmunyosko762@gmail.com
+                    br
+                    h6 Whatsapp :
+                    h6 +6281234122072
+                    h6 +6282395865814 
+                    br
+                    h6 Youtube :
+                    a(href="https://www.youtube.com/channel/UC7KwmYWW8Vq1suQARAVJSvA" target="_blank")  Ferdinandus Fahik
+                    br
+                    a(href="https://www.youtube.com/channel/UC6cTJSCirS52FjD3J5xk0VA" target="_blank")  Edmundus Riwu
+                    div(class="col-sm-1") 
+                    div(class="row")
+                        div(class="col-sm-4")
+                            img(src="./gambar/WA.jpg" width="45" height="45") 
+                        div(class="col-sm-4")      
+                            img(src="./gambar/email.jpg"  width="45" height="45")  
+                        div(class="col-sm-4")      
+                            img(src="./gambar/yt.png"  width="45" height="45")  
+    
